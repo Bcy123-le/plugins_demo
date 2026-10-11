@@ -1,0 +1,12 @@
+#ifndef PLUGIN_HELLO_GLOBAL_H
+#define PLUGIN_HELLO_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(PLUGIN_HELLO_LIBRARY)
+#  define PLUGIN_HELLO_EXPORT Q_DECL_EXPORT
+#else
+#  define PLUGIN_HELLO_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // PLUGIN_HELLO_GLOBAL_H
